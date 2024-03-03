@@ -1,182 +1,32 @@
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f0f0f0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
-.flower {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  animation: flower-grow 2s forwards;
+.card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.flower__leafs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: flower-grow 2s forwards;
+.envelope {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform-origin: top center;
+    transform: rotateX(-180deg);
+    transition: transform 0.5s ease-out;
 }
-
-.flower__leaf {
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  background: #00ff00;
-  border-radius: 50%;
-  animation: flower-grow 2s linear infinite;
-}
-
-.flower__leaf--1 {
-  transform: rotate(0deg) translate(50px);
-}
-
-.flower__leaf--2 {
-  transform: rotate(40deg) translate(50px);
-}
-
-.flower__leaf--3 {
-  transform: rotate(80deg) translate(50px);
-}
-
-.flower__leaf--4 {
-  transform: rotate(120deg) translate(50px);
-}
-
-.flower__leaf--5 {
-  transform: rotate(160deg) translate(50px);
-}
-
-.flower__leaf--6 {
-  transform: rotate(200deg) translate(50px);The provided CSS code is missing the keyframes for the animations. Here's the corrected CSS code with the missing keyframes:
-
-```css
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f0f0f0;
-}
-
-.flower {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  animation: flower-grow 2s forwards;
-}
-
-.flower__leafs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: flower-grow 2s forwards;
-}
-
-.flower__leaf {
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  background: #00ff00;
-  border-radius: 50%;
-  animation: flower-grow 2s linear infinite;
-}
-
-.flower__leaf--1 {
-  transform: rotate(0deg) translate(50px);
-}
-
-.flower__leaf--2 {
-  transform: rotate(40deg) translate(50px);
-}
-
-.flower__leaf--3 {
-  transform: rotate(80deg) translate(50px);
-}
-
-.flower__leaf--4 {
-  transform: rotate(120deg) translate(50px);
-}
-
-.flower__leaf--5 {
-  transform: rotate(160deg) translate(50px);
-}
-
-.flower__leaf--6 {
-  transform: rotate(200deg) translate(50px);
-}
-
-.flower__leaf--7 {
-  transform: rotate(240deg) translate(50px);
-}
-
-.flower__leaf--8 {
-  transform: rotate(280deg) translate(50px);
-}
-
-.flower__leaf--9 {
-  transform: rotate(320deg) translate(50px);
-}
-
-.flower__leaf--10 {
-  transform: rotate(360deg) translate(50px);
-}
-
-.flower__leaf--11 {
-  transform: rotate(400deg) translate(50px);
-}
-
-.flower__leaf--12 {
-  transform: rotate(440deg) translate(50px);
-}
-
-.flower__leaf--13 {
-  transform: rotate(480deg) translate(50px);
-}
-
-.flower__leaf--14 {
-  transform: rotate(520deg) translate(50px);
-}
-
-.flower__leaf--15 {
-  transform: rotate(560deg) translate(50px);
-}
-
-.flower__leaf--16 {
-  transform: rotate(600deg) translate(50px);
-}
-
-.flower__leaf--17 {
-  transform: rotate(640deg) translate(50px);
-}
-
-.flower__leaf--18 {
-  transform: rotate(680deg) translate(50px);
-}
-
-.flower__leaf--19 {
-  transform: rotate(720deg) translate(50px);
-}
-
-.flower__leaf--20 {
-  transform: rotate(760deg) translate(50px);
-}
-
-@keyframes flower-grow {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-  }
