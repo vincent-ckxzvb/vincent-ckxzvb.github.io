@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.scene {
+  height: 100vh;
+  background-color: #040c1e; /* Night sky color */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.flower {
+  width: 50px;
+  height: 100px;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  margin: 0 10px;
+  animation: blossom 3s infinite alternate;
+}
+
+.mint-green {
+  background-color: #98e6b3; /* Mint green */
+}
+
+.coffee-brown {
+  background-color: #8b4513; /* Coffee brown */
+}
+
+.sky-blue {
+  background-color: #87ceeb; /* Sky blue */
+}
+
+.cherry-blossom {
+  width: 10px;
+  height: 10px;
+  background-color: #f8c545; /* Cherry blossom color */
+  border-radius: 50%;
+  position: absolute;
+  animation: fall 5s infinite linear;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.7;
+}
